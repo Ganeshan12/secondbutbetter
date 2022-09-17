@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Kanit:wght@300&display=swap');
+
+:root{
+    --Primary:#eb4d4b;
+    --Primary-light: #eb4e4bb1;
+    --Secondary: #4834d4;
+    --Secondary-light: #4934d46f;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h2{
+    height: 100;
+    font-weight: normal;}
+
+body{
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    
+}
+
+section{
+    background-image: url(/img/Cambridge.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    float: left;
+    justify-content: center;
+}
+
+/*#home{background:linear-gradient(to left, #FC427B,#44bd32);}*/
+#about{background: linear-gradient(to right, #A64AC9,white);}
+#contact{background: linear-gradient(to right ,#e74c3c,#FFC312);}
+#login{background: linear-gradient(to right, #4834d4,#eb4d4b);}
+
+header{
+    background: url(/img/Avengers\ Burning.jpg);
+    background-color: rgba(51, 51, 51, 0.556);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: none;
+    position: fixed;
+    background-color:#ff6b81;
+    border-left: 1px solid rgba(255,255,255,0.3);  
+}
+
+
+#menu li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 100px;
+}
+
+#menu li a{
+    text-decoration:none;
+    color: brown;
+
+}
+
+#about,#contact,#login{
+    padding-top: 80px;
+}
+
+#txtSearch{
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 200px;
+    font-size: 15px;
+    padding: 10px 10px;
+}
+
+.search{
+    background-color: #fd79a8;
+    display: flex;
+}
+
+#login{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+form{
+    width: 25rem;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,.37);
+    border-radius: 30px;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+    letter-spacing: 3px;
+    margin-bottom: 5%;
+    opacity: .7;
+    
+}
+
+label{
+    margin-left: 10%;
+}
+
+input{
+    width: 80%;
+    margin: 5% auto;
+    margin-bottom: 8%;
+    border: none;
+    outline: none;
+    background: transparent;
+    
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+button{
+    cursor: pointer;
+    width: 50%;
+    margin: 3% auto;
+    color: white;
+    font-size: 15px;
+    background: rgba(255,255,255,0.06);
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.02);
+    box-shadow: 3px 3px 5px rgba(31,38,135,.37);
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+button:hover{
+    transform: translateY(-5px);
+
+}
+
+a{
+    text-align: center;
+    opacity: .9;
+
+}
+
+li::after{
+    content: '';
+    display: block;
+    background-color:var(--Secondary);
+    height: 2px;
+    transform:scaleX(0);
+    transition: transform 300ms;
+}
+
+li:hover::after{
+    transform: scaleX(1);
+
+}
+
+::selection{
+    color: var(--Secondary);
+    background-color: #44bd32;
+
+}
